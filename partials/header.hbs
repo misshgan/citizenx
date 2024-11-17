@@ -1,0 +1,38 @@
+<header class="header">
+    <div class="wrapper">
+        {{#is 'index'}}
+            <a href="/" class="logo-link-container">
+                {{> icons/logo classes='logo logo--dark'}}
+            </a>
+        {{else}}
+            {{> icons/logo classes='logo logo--dark'}}
+        {{/is}}
+
+        <nav class="header-nav">
+            <ul class="header-nav__main">
+                <li>
+                    <a href="https://citizenx.com/how-it-works">Why us</a>
+                </li>
+                <li>
+                    <a href="https://citizenx.com/pricing">Pricing</a>
+                </li>
+            </ul>
+
+            <ul class="header-nav__login-buttons">
+                <li>
+                    <a class="button button--white" href="https://home.citizenx.com/signin">
+                        {{> icons/login}}
+                        <span>Log In</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="button button--accent" href="https://home.citizenx.com/signin">
+                        {{> icons/symbol}}
+                        <span>Create account</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
