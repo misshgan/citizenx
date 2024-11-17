@@ -1,0 +1,46 @@
+.header {
+    margin-top: 2.4rem;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 0 1.6rem;
+    }
+    .logo-link-container {
+        line-height: 0;
+    }
+
+    .logo-link-container > svg {
+        height: 3.12rem;
+        width: auto;
+    }
+}
+
+.header-nav {
+
+    &__main {
+        display: none;
+        visibility: hidden;
+    }
+    &__login-buttons {
+        display: flex;
+        align-items: center;
+        column-gap: 0.8rem;
+    }
+
+    .button {
+        display: flex;
+        align-items: center;
+        column-gap: 0.8rem;
+    }
+
+    .button--white span {
+        display: none;
+    }
+
+    .button--accent {
+        font-weight: 600;
+    }
+}
