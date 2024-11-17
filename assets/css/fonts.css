@@ -1,0 +1,165 @@
+/* Aeonik Mono -------------------------------------------------------------- Aeonik Mono */
+
+@font-face {
+    font-family: "Aeonik Mono";
+    src: url('/assets/fonts/AeonikMono/AeonikMono-Air.otf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Aeonik Mono";
+    src: url('/assets/fonts/AeonikMono/AeonikMono-Thin.otf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Aeonik Mono";
+    src: url('/assets/fonts/AeonikMono/AeonikMono-Light.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Aeonik Mono";
+    src: url('/assets/fonts/AeonikMono/AeonikMono-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Aeonik Mono";
+    src: url('/assets/fonts/AeonikMono/AeonikMono-Medium.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Aeonik Mono";
+    src: url('/assets/fonts/AeonikMono/AeonikMono-Bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Aeonik Mono";
+    src: url('/assets/fonts/AeonikMono/AeonikMono-Black.otf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Editor's Note -------------------------------------------------------------- Editor's Note */ 
+
+@font-face {
+    font-family: "Editor's Note";
+    src: url('/assets/fonts/EditorsNote/Editor\'sNote-Thin.otf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Editor's Note";
+    src: url('/assets/fonts/EditorsNote/Editor\'sNote-Extralight.otf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Editor's Note";
+    src: url('/assets/fonts/EditorsNote/Editor\'sNote-Light.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Editor's Note";
+    src: url('/assets/fonts/EditorsNote/Editor\'sNote-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Editor's Note";
+    src: url('/assets/fonts/EditorsNote/Editor\'sNote-Medium.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Editor's Note";
+    src: url('/assets/fonts/EditorsNote/Editor\'sNote-Semibold.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Editor's Note";
+    src: url('/assets/fonts/EditorsNote/Editor\'sNote-Bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Editor's Note";
+    src: url('/assets/fonts/EditorsNote/Editor\'sNote-ThinItalic.otf');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Editor's Note";
+    src: url('/assets/fonts/EditorsNote/Editor\'sNote-ExtralightItalic.otf');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Editor's Note";
+    src: url('/assets/fonts/EditorsNote/Editor\'sNote-LightItalic.otf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Editor's Note";
+    src: url('/assets/fonts/EditorsNote/Editor\'sNote-RegularItalic.otf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Editor's Note";
+    src: url('/assets/fonts/EditorsNote/Editor\'sNote-MediumItalic.otf');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Editor's Note";
+    src: url('/assets/fonts/EditorsNote/Editor\'sNote-SemiboldItalic.otf');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Editor's Note";
+    src: url('/assets/fonts/EditorsNote/Editor\'sNote-BoldItalic.otf');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Inter Tight -------------------------------------------------------------- Inter Tight */ 
+
+@font-face {
+    font-family: "Inter Tight";
+    src: url('/assets/fonts/InterTight/InterTight-VariableFont_wght.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter Tight";
+    src: url('/assets/fonts/InterTight/InterTight-Italic-VariableFont_wght.ttf');
+    font-style: italic;
+}
