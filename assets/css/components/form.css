@@ -1,0 +1,129 @@
+.form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    transition: all .2s;
+
+    &__main {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        column-gap: 1.6rem;
+    }
+
+    label span {
+        position: absolute;
+        opacity: 0;
+    }
+
+    label {
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    input {
+        width: 100%;
+
+        border-radius: .8rem;
+        border: 1px solid #EDF0F3;
+        background: #FFF;
+
+        padding: .7rem .8rem;
+
+        font-family: "Inter Tight";
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2; /* 200% */
+
+        transition: all .3s;
+    }
+
+    input::placeholder {
+        font-family: "Inter Tight";
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2; /* 200% */
+        color: rgba(86, 104, 140, 0.50);
+    }
+
+    input:focus-visible {
+        border: 1px solid rgba(86, 104, 140, 0.50);;
+        outline: none;
+    }
+
+    button > svg path {
+        fill: #fff;
+        stroke: #fff;
+    }
+
+    button > svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        display: none;
+        visibility: hidden;
+    }
+
+    &.loading button > svg {
+        display: block;
+        visibility: visible;
+    }
+
+    button.button {
+        min-width: max-content;
+        font-weight: 600;
+        line-height: 2;
+        padding: .7rem 1.3rem;
+        position: relative;
+    }
+
+    &.loading button.button {
+        color: transparent;
+    }
+
+    &__notifications {
+        margin-top: 1rem;
+        width: 100%;
+        text-align: center;
+
+        display: none;
+        visibility: hidden;
+    }
+
+    &.error &__notifications,
+    &.success &__notifications {
+        visibility: visible;
+        display: block;
+        animation: fadeIn .6s;
+    }
+
+    &.error .error,
+    &.success .success {
+        display: block;
+    }
+
+    &__notifications .success {
+        color: var(--color-success);
+        display: none;
+    }
+
+    &__notifications .error {
+        color: var(--color-error);
+        display: none;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
