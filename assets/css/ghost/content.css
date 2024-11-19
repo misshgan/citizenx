@@ -5,10 +5,10 @@
 
 .gh-canvas,
 .kg-width-full.kg-content-wide {
-    --gap: 4vw;
-    --main: min(var(--content-width, 720px), 100% - var(--gap) * 2);
-    --wide: minmax(0, calc((var(--container-width, 1200px) - var(--content-width, 720px)) / 2));
-    --full: minmax(var(--gap), 1fr);
+    /* --gap: 4vw;
+    --main: 80%;
+    --wide: 5%;
+    --full: 5%;
 
     display: grid;
     grid-template-columns:
@@ -16,7 +16,9 @@
         [wide-start] var(--wide)
         [main-start] var(--main) [main-end]
         var(--wide) [wide-end]
-        var(--full) [full-end];
+        var(--full) [full-end]; */
+    display: flex;
+    flex-direction: column;
 }
 
 .gh-canvas > * {
@@ -40,6 +42,24 @@
 /* Content & Typography
 /* ---------------------------------------------------------- */
 
+.gh-content > h2,
+.gh-content > h3,
+.gh-content > h4,
+.gh-content > h5,
+.gh-content > h6 {
+    font-family: "Inter Tight";
+    font-weight: 700;
+    line-height: 1.3; /* 130.769% */
+}
+
+.gh-content > h2 {
+    font-size: 3.2rem;
+}
+
+.gh-content > h3 {
+    font-size: 2.6rem;
+}
+
 .gh-content > * + * {
     margin-top: 4vmin;
 }
@@ -62,10 +82,11 @@
 .gh-canvas > ul,
 .gh-canvas > dl,
 .gh-canvas > p {
-    font-family: var(--font-serif);
+    font-family: 'FK Roman Standard';
     font-weight: 400;
-    font-size: 2rem;
-    line-height: 1.6em;
+    font-size: 1.8rem;
+    line-height: 1.66;
+    letter-spacing: -0.036px;
 }
 
 .gh-content > ul,
