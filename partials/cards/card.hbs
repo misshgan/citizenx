@@ -1,0 +1,18 @@
+<article class="card {{classes}}">
+    {{#if feature_image}}
+        <a href="{{url}}">
+            <img class="card__image" src="{{feature_image}}" alt="{{title}}">
+        </a>
+    {{/if}}
+    <h2 class="card__title"><a href="{{url}}">{{title}}</a></h2>
+    {{#if custom_excerpt}}
+        <p class="card__subtitle">{{custom_excerpt}}</p>
+    {{/if}}
+    <div class="card__footer">
+        <span class="card__author">{{primary_author.name}}</span>
+        <span class="card__time"><time datetime="{{published_at}}">{{date published_at format='MMM D'}}</time></span>
+        {{#if primary_tag}}
+            <span class="card__tag"><small>·</small>{{primary_tag.name}}</span>
+        {{/if}}
+    </div>
+</article>
