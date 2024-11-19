@@ -1,0 +1,57 @@
+.tag-page-hero {
+    padding: 4rem 0;
+    background-color: #fff;
+
+    @media (min-width:1025px) {
+        padding: 4rem 0 6.2rem;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.4rem;
+
+        @media (min-width:1025px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 6.4rem;
+            align-items: center;
+        }
+    }
+
+    &__text {
+        h1 {
+            font-family: "Editor's Note";
+            font-size: 5.4rem;
+            font-weight: 600;
+            line-height: 1.03; /* 103.704% */
+            letter-spacing: -1.08px;
+        }
+
+        p {
+            margin-top: 2.4rem;
+
+            font-family: "FK Roman Standard";
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 1.66; /* 166.667% */
+            letter-spacing: -0.036px;
+        }
+    }
+
+    &__text + img {
+        border-radius: .8rem;
+        aspect-ratio: 1.59 / 1;
+        object-fit: cover;
+    }
+}
+
+.tag-page-content {
+    margin: 8rem 0;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 7rem;
+    }
+}
