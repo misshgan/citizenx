@@ -1,12 +1,10 @@
 .header {
-    margin-top: 2.4rem;
+    padding-top: 2.4rem;
 
     .wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-        padding: 0 1.6rem;
     }
     .logo-link-container {
         line-height: 0;
@@ -16,6 +14,72 @@
         height: 3.12rem;
         width: auto;
     }
+}
+
+.header.header--sticky {
+    position: fixed;
+    background-color: #fff;
+    z-index: 10;
+    top: -100%;
+    width: 100%;
+    padding: .8rem 0;
+    transition: all .3s;
+
+    @media (min-width:1025px) {
+        padding: 0;
+    }
+
+    & .mobile {
+        @media (min-width:1025px) {
+            display: none;
+            visibility: hidden;
+        }
+    }
+
+    & .desktop {
+        @media (max-width:1024px) {
+            display: none;
+            visibility: hidden;
+        }
+    }
+
+    .header__title {
+
+        font-family: "FK Roman Display";
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal; /* 212.5% */
+        letter-spacing: -0.32px;
+    }
+
+    .js-scroll-to-top {
+        cursor: pointer;
+    }
+}
+
+.progress-bar-container {
+    height: 4px;
+    background-color: #EDF0F3;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.progress-bar {
+    height: 4px;
+    background-color: #020712;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 11;
+}
+
+body.tag-template .header,
+body.post-template .header {
+    background-color: #fff;
 }
 
 .header-nav {
