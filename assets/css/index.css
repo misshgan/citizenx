@@ -14,11 +14,24 @@ production stylesheet in assets/built/screen.css using: npm run dev
 @import "components/global.css";
 
 @import 'components/header.css';
+@import 'components/category-filter.css';
+@import 'components/card.css';
+@import 'components/featured.css';
+@import 'components/form.css';
+@import 'components/loop.css';
+@import 'components/partners-logo-loop.css';
+@import 'components/footer-cta.css';
+@import 'components/footer.css';
+@import 'components/post-sidebar.css';
 
 /* Elements */
 @import "elements/buttons.css";
 
 /* Ghost components */
-@import "ghost/header.css";
 @import "ghost/content.css";
-@import "ghost/footer.css";
+
+/* Pages */
+
+@import 'pages/home.css';
+@import 'pages/tag.css';
+@import 'pages/post.css';
