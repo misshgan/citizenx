@@ -1,0 +1,15 @@
+.hero {
+    margin-top: 4rem;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4rem;
+
+        @media (min-width:1025px) {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            column-gap: 2rem;
+        }
+    }
+}
