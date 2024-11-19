@@ -77,6 +77,8 @@
     },
     "type": "module",
     "dependencies": {
-        "postcss-nested": "^7.0.2"
+        "postcss-nested": "^7.0.2",
+        "swiper": "^11.1.14",
+        "tocbot": "^4.32.2"
     }
 }
