@@ -1,0 +1,15 @@
+.partners-logo-loop {
+    margin-top: 8rem;
+
+    @media (min-width:1025px) {
+        margin-top: 15rem;
+    }
+}
+
+.partners-logo-loop .swiper .swiper-wrapper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 8.9rem;    
+}
