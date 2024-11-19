@@ -1,0 +1,219 @@
+.post-page {
+    .wrapper {
+    }
+}
+.post-hero {
+    background-color: #fff;
+    padding: 4.8rem 0 2.4rem;
+
+    @media (min-width: 1025px) {
+        padding: 4rem 0 6rem;
+    }
+
+    .wrapper {
+        @media (min-width: 1025px) {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            column-gap: 2rem;
+        }
+    }
+
+    &__tags {
+        grid-column: span 2;
+        display: none;
+        visibility: hidden;
+        align-items: center;
+        column-gap: 0.8rem;
+
+        color: #020712;
+        font-family: "Aeonik Mono";
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 2.66; /* 266.667% */
+        letter-spacing: 0.84px;
+        text-transform: uppercase;
+
+        a {
+            color: inherit;
+            text-decoration: unset;
+        }
+
+        @media (min-width: 1025px) {
+            display: flex;
+            visibility: visible;
+        }
+    }
+
+    h1 {
+        font-family: "Editor's Note";
+        font-size: 5.4rem;
+        font-weight: 600;
+        line-height: 1.03; /* 103.704% */
+        letter-spacing: -1.08px;
+
+        @media (min-width: 1025px) {
+            grid-column: span 2;
+            padding: 0.8rem 0 4rem;
+        }
+    }
+
+    h1 + img {
+        margin-top: 4rem;
+        border-radius: 0.8rem;
+        aspect-ratio: 1.59 / 1;
+        object-fit: cover;
+
+        @media (min-width: 1025px) {
+            margin-top: 0;
+            aspect-ratio: unset;
+        }
+    }
+
+    & > .wrapper > div > p {
+        margin-top: 4rem;
+
+        font-family: "FK Roman Display";
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 1.41; /* 141.667% */
+        letter-spacing: -0.48px;
+        @media (min-width: 1025px) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        @media (min-width: 1025px) {
+            margin-top: 0;
+        }
+    }
+
+    &__author {
+        margin-top: 0.8rem;
+
+        @media (min-width: 1025px) {
+            margin-top: 5.5rem;
+        }
+    }
+    &__footer {
+        margin-top: 1.6rem;
+        padding-top: 2.4rem;
+        border-top: 1px solid #edf0f3;
+    }
+}
+.post-hero-author {
+    display: flex;
+    align-items: center;
+    column-gap: 0.8rem;
+
+    &__image {
+        border-radius: 50%;
+        object-fit: cover;
+        width: 8rem;
+        height: 8rem;
+        object-position: cover;
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+
+        font-family: "Aeonik Mono";
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 2; /* 266.667% */
+        letter-spacing: 0.84px;
+        text-transform: uppercase;
+    }
+    &__name {
+    }
+    &__bio {
+        color: #56688c;
+    }
+}
+.post-hero-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: 1025px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 1.6rem;
+    }
+
+    &__meta {
+        display: flex;
+        align-items: center;
+        column-gap: 0.8rem;
+        text-transform: uppercase;
+
+        font-family: "Aeonik Mono";
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 2.66; /* 266.667% */
+        letter-spacing: 0.84px;
+        text-transform: uppercase;
+
+        span {
+            color: #56688c;
+        }
+    }
+
+    &__share {
+        display: flex;
+        align-items: center;
+        column-gap: 0.8rem;
+    }
+
+    &__share > li > * {
+        display: flex;
+        cursor: pointer;
+        background-color: transparent;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        border-radius: 999px;
+        border: 1px solid #edf0f3;
+        width: 3.4rem;
+        height: 3.4rem;
+        transition: all 0.3s;
+    }
+}
+
+.post-content {
+    padding-top: 4rem;
+
+    .wrapper {
+        @media (min-width: 1025px) {
+            display: flex;
+            column-gap: 2rem;
+        }
+    }
+
+    .wrapper > .gh-content {
+        @media (min-width:1025px) {
+            width: 65%;
+        }
+    }
+}
+
+.post-related {
+    margin-top: 15.5rem;
+
+    .wrapper {
+    }
+    
+    &__title {
+        font-family: "Inter Tight";
+        font-size: 2.6rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.3; /* 130.769% */
+    }
+
+    .articles-loop {
+        margin-top: 4rem;
+    }
+}
