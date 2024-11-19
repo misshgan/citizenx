@@ -1,0 +1,11 @@
+<div class="hero">
+    <div class="wrapper">
+        {{#get "posts" include='tags,authors' filter='tag:-hash-hide' limit='1'}}
+            {{#foreach posts}}
+                {{> cards/card classes='card--big'}}
+            {{/foreach}}
+        {{/get}}
+
+        {{> components/featured}}
+    </div>
+</div>
