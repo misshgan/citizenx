@@ -1,0 +1,27 @@
+.featured {
+    border-radius: 8px;
+    border: 1px solid #EDF0F3;
+    background: #FFF;
+    height: max-content;
+    padding: 2.4rem;
+
+    &__title {
+        font-family: "Aeonik Mono";
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 2.66; /* 266.667% */
+        letter-spacing: 0.84px;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        margin-top: 1.6rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.6rem;
+    }
+
+    .form {
+        margin-top: 3rem;
+    }
+}
