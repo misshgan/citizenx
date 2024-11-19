@@ -1,0 +1,20 @@
+.articles-loop {
+    margin-top: 4rem;
+
+    @media (min-width:1025px) {
+        margin-top: 8rem;
+    }
+    
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4rem;
+
+        @media (min-width:1025px) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 2rem;
+            row-gap: 4rem;
+        }
+    }
+}
