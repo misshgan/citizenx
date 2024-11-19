@@ -163,3 +163,90 @@
     src: url('/assets/fonts/InterTight/InterTight-Italic-VariableFont_wght.ttf');
     font-style: italic;
 }
+
+/* FK Roman Standard -------------------------------------------------------------- FK Roman Standard */ 
+
+@font-face {
+    font-family: "FK Roman Standard";
+    src: url('/assets/fonts/FKRomanStandard/FKRomanStandard-Thin.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FK Roman Standard";
+    src: url('/assets/fonts/FKRomanStandard/FKRomanStandard-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FK Roman Standard";
+    src: url('/assets/fonts/FKRomanStandard/FKRomanStandard-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FK Roman Standard";
+    src: url('/assets/fonts/FKRomanStandard/FKRomanStandard-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FK Roman Standard";
+    src: url('/assets/fonts/FKRomanStandard/FKRomanStandard-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FK Roman Standard";
+    src: url('/assets/fonts/FKRomanStandard/FKRomanStandard-Black.ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "FK Roman Standard";
+    src: url('/assets/fonts/FKRomanStandard/FKRomanStandard-ThinOblique.ttf');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "FK Roman Standard";
+    src: url('/assets/fonts/FKRomanStandard/FKRomanStandard-LightOblique.ttf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "FK Roman Standard";
+    src: url('/assets/fonts/FKRomanStandard/FKRomanStandard-RegularOblique.ttf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "FK Roman Standard";
+    src: url('/assets/fonts/FKRomanStandard/FKRomanStandard-MediumOblique.ttf');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "FK Roman Standard";
+    src: url('/assets/fonts/FKRomanStandard/FKRomanStandard-BoldOblique.ttf');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "FK Roman Standard";
+    src: url('/assets/fonts/FKRomanStandard/FKRomanStandard-BlackOblique.ttf');
+    font-weight: 900;
+    font-style: italic;
+}
