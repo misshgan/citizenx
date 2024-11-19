@@ -24,6 +24,12 @@
 
 </main>
 
+{{> footer}}
+
+{{#is 'post'}}
+    {{> components/sticky-footer}}
+{{/is}}
+
 {{ghost_foot}}
 
 {{{block 'scripts'}}}
