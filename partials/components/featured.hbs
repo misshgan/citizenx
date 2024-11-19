@@ -1,0 +1,14 @@
+<section class="featured">
+    <h2 class="featured__title">Featured</h2>
+    {{#get "posts" include='authors' filter='featured:true' limit='5'}}
+        {{#if posts}}
+            <ul class="featured__list">
+                {{#foreach posts}}
+                    {{> cards/featured-card}}
+                {{/foreach}}
+            </ul>
+        {{/if}}
+    {{/get}}
+    
+    {{> components/form}}
+</section>
