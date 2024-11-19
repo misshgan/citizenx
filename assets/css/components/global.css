@@ -28,6 +28,19 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.wrapper {
+    padding: 0 1.6rem;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.logo.logo--light path {
+    fill: #fff;
+}
+
+.symbol.symbol--dark path {
+    fill: #020712;
+}
 
 p,
 ul,
