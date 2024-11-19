@@ -1,0 +1,73 @@
+.sidebar-container {
+    @media (max-width:1024px) {
+        display: none;
+        visibility: hidden;
+    }
+
+    .sidebar {
+        border-radius: .8rem;
+        background: #FFF;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.06);
+        padding: 2.4rem;
+        position: sticky;
+        top: 8rem;
+
+        .toc-list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.6rem;
+        }
+
+        .toc-link {
+            color: #020712;
+            font-family: "Inter Tight";
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 0; /* 200% */
+        }
+
+        .toc-link:hover {
+            text-decoration: underline;
+        }
+
+        .toc-link.is-active-link {
+            position: relative;
+            font-weight: 700;
+        }
+        .toc-link.is-active-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            right: calc(100% + 2.2rem);
+            background-color: #020712;
+        }
+    }
+    .js-toc {
+    }
+    .button {
+        display: flex;
+        justify-content: center;
+        column-gap: .8rem;
+        margin-top: 2.4rem;
+        width: 100%;
+
+        font-family: 'Inter';
+        font-size: 1.6rem;
+        font-weight: 600;
+        letter-spacing: -0.32px;
+    }
+    .button--accent {
+    }
+    .share-group {
+        margin: 1.6rem auto 0;
+        max-width: max-content;
+        text-transform: uppercase;
+    }
+    .class {
+    }
+    .js-copy-url {
+    }
+}
+
