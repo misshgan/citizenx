@@ -1,0 +1,9 @@
+{{#get "posts" filter=filter include='authors,tags' limit=limit}}
+    <div class="articles-loop">
+        <div class="wrapper">
+            {{#foreach posts from=../from}}
+                {{> cards/card classes='card--default'}}
+            {{/foreach}}
+        </div>
+    </div>
+{{/get}}
