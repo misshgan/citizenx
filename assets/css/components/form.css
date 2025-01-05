@@ -5,6 +5,11 @@
     position: relative;
     transition: all .2s;
 
+    &--author {
+        max-width: 37.5rem;
+        margin-top: 1.6rem;
+    }
+
     &__main {
         display: flex;
         width: 100%;
@@ -94,6 +99,15 @@
 
         display: none;
         visibility: hidden;
+    }
+
+    &--author &__notifications {
+        position: absolute;
+        top: calc(100% + .8rem);
+
+        @media (max-width:600px) {
+            top: calc(100% + .4rem);
+        }
     }
 
     &.error &__notifications,

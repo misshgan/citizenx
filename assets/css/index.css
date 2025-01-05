@@ -37,3 +37,4 @@ production stylesheet in assets/built/screen.css using: npm run dev
 @import 'pages/tag.css';
 @import 'pages/post.css';
 @import 'pages/error.css';
+@import 'pages/author.css';

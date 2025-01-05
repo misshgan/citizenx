@@ -25,7 +25,9 @@
 
 </main>
 
-{{> footer}}
+{{^is 'author'}}
+    {{> footer}}
+{{/is}}
 
 {{#is 'post'}}
     {{> components/sticky-footer}}

@@ -1,0 +1,30 @@
+<div class="author-header">
+    {{#if profile_image}}
+        <img src="{{profile_image}}" alt="{{name}}" class="author-header__image">
+    {{/if}}
+    <h1 class="author-header__name">{{name}}</h1>
+    {{#match name "=" 'Alex Recouso'}}
+        <div class="author-header__links">
+            <a href="https://x.com/alexrecouso" target="_blank">
+                <div>{{> icons/author/x}}</div>
+                <span>@alexrecouso</span>
+            </a>
+            <a href="https://ch.linkedin.com/in/alexrecouso">
+                <div>{{> icons/author/linkedin}}</div>
+                <span>alexrecouso</span>
+            </a>
+            <a target="_blank" href="https://recou.so/">
+                <div>{{> icons/author/website}}</div>
+                <span>recou.so</span>
+            </a>
+        </div>
+    {{/match}}
+    <p class="author-header__bio">
+        {{#match name "=" 'Alex Recouso'}}
+            Co-founder, CEO of CitizenX. Creating a market for citizenship. “Imagine if you could choose your citizenship the same way you choose your gym membership.”
+        {{else}}
+            {{bio}}
+        {{/match}}
+    </p>
+    {{> components/form classes='js-form-secondary form--author' button='Subscribe'}}
+</div>

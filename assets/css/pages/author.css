@@ -1,0 +1,74 @@
+.author {
+    padding-bottom: 7rem;
+
+    .partners-logo-loop {
+        margin-top: 2.4rem;
+    }
+}
+
+.author-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+
+    &__image {
+        width: 8.4rem;
+        height: 8.4rem;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    &__name {
+        margin-top: .8rem;
+
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+    &__links {
+        display: flex;
+        align-items: center;
+        column-gap: .8rem;
+        margin-top: .8rem;
+
+        a {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #020712;
+            text-decoration: unset;
+            line-height: 0;
+            font-family: 'Inter Tight', sans-serif;
+
+            display: flex;
+            align-items: center;
+            column-gap: .4rem;
+
+            padding: .5rem;
+            border-radius: 4px;
+            border: 1px solid #EDF0F3;
+            background: #FFF;
+        }
+
+        div {
+            width: 1.4rem;
+            height: 1.4rem;
+            background-color: #020712;
+            border-radius: 2px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__bio {
+        margin-top: 1.6rem;
+        max-width: 60rem;
+
+        font-family: "FK Roman Standard", serif;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 166.667% */
+        letter-spacing: -0.036px;
+        text-align: center;
+    }
+}
