@@ -3,7 +3,7 @@
     background-color: #fff;
 
     @media (min-width:1025px) {
-        padding: 4rem 0 6.2rem;
+        padding: 4rem 0 2.4rem;
     }
 
     .wrapper {
@@ -20,6 +20,7 @@
     }
 
     &__text {
+
         h1 {
             font-family: "Editor's Note";
             font-size: 5.4rem;
@@ -36,6 +37,10 @@
             font-weight: 400;
             line-height: 1.66; /* 166.667% */
             letter-spacing: -0.036px;
+
+            @media (min-width:1025px) {
+                max-width: 45.5rem;
+            }
         }
     }
 
