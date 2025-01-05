@@ -1,0 +1,13 @@
+.error-page {
+    padding: 6.5rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        max-width: 40rem;
+        width: 100%;
+    }
+}
