@@ -4,11 +4,11 @@
         {{#if posts}}
             <ul class="featured__list">
                 {{#foreach posts}}
-                    {{> cards/featured-card}}
+                    <li>{{> cards/featured-card}}</li>
                 {{/foreach}}
             </ul>
         {{/if}}
     {{/get}}
     
-    {{> components/form}}
+    {{> components/form classes='js-form-secondary' button='Receive updates'}}
 </section>
