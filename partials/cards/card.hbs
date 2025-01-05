@@ -1,7 +1,51 @@
 <article class="card {{classes}}">
     {{#if feature_image}}
         <a href="{{url}}">
-            <img class="card__image" src="{{feature_image}}" alt="{{title}}">
+            {{!-- <img class="card__image" src="{{feature_image}}" alt="{{title}}"> --}}
+            <picture class="gh-card-picture">
+                <source 
+                    srcset="
+                    {{img_url feature_image absolute="true" size="s" format="avif"}} 300w,
+                    {{img_url feature_image absolute="true" size="m" format="avif"}} 600w,
+                    {{#if cardBig}}
+                        {{img_url feature_image absolute="true" size="l" format="avif"}} 1200w,
+                    {{/if}}"
+                    sizes="(max-width: 1000px) 400px, 800px"
+                    type="image/avif"
+                    {{^if cardBig}}
+                        loading="lazy"
+                    {{/if}}
+                >
+                <source 
+                    srcset="
+                    {{img_url feature_image absolute="true" size="s" format="webp"}} 300w,
+                    {{img_url feature_image absolute="true" size="m" format="webp"}} 600w,
+                    {{#if cardBig}}
+                    {{img_url feature_image absolute="true" size="l" format="webp"}} 1200w
+                    {{/if}}"
+                    sizes="(max-width: 1000px) 400px, 800px"
+                    type="image/webp"
+                    {{^if cardBig}}
+                        loading="lazy"
+                    {{/if}}
+
+                >
+                <img
+                    srcset="
+                    {{img_url feature_image absolute="true" size="s"}} 300w,
+                    {{img_url feature_image absolute="true" size="m"}} 600w,
+                    {{#if cardBig}}
+                    {{img_url feature_image absolute="true" size="l"}} 1200w
+                    {{/if}}"
+                    sizes="(max-width: 1000px) 400px, 800px"
+                    src="{{img_url feature_image absolute="true" size="m"}}"
+                    alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
+                    class="card__image {{^if cardBig}}lazyload{{/if}}"
+                    {{^if cardBig}}
+                        loading="lazy"
+                    {{/if}}
+                >
+            </picture>
         </a>
     {{/if}}
     <h2 class="card__title"><a href="{{url}}">{{title}}</a></h2>
