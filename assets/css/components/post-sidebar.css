@@ -1,4 +1,6 @@
 .sidebar-container {
+    width: 41.3rem;
+
     @media (max-width:1024px) {
         display: none;
         visibility: hidden;
@@ -10,12 +12,13 @@
         box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.06);
         padding: 2.4rem;
         position: sticky;
-        top: 8rem;
+        top: 9rem;
 
         .toc-list {
             display: flex;
             flex-direction: column;
             row-gap: 1.6rem;
+            width: 90%;
         }
 
         .toc-link {
