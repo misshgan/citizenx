@@ -31,7 +31,7 @@
 
         padding: .7rem .8rem;
 
-        font-family: "Inter Tight";
+        font-family: "Inter";
         font-size: 1.6rem;
         font-style: normal;
         font-weight: 400;
@@ -41,7 +41,7 @@
     }
 
     input::placeholder {
-        font-family: "Inter Tight";
+        font-family: "Inter";
         font-size: 1.6rem;
         font-style: normal;
         font-weight: 400;
@@ -80,6 +80,7 @@
         line-height: 2;
         padding: .7rem 1.3rem;
         position: relative;
+        font-family: 'Inter';
     }
 
     &.loading button.button {
@@ -125,5 +126,88 @@
 
     to {
         opacity: 1;
+    }
+}
+
+
+.header .form {
+    margin-left: auto;
+    width: max-content;
+
+    /* @media (min-width:769px) {
+        display: none;
+        visibility: hidden;
+    } */
+
+    label {
+        width: 0;
+        max-width: 30rem;
+        overflow: hidden;
+        transition: .2s ease-out;
+
+        @media (max-width:768px) {
+            width: unset;
+            max-width: 0;
+        }
+    }
+
+    input {
+        padding: .9rem .8rem;
+    }
+    
+    button {
+        padding: .8rem 1.3rem;
+    }
+
+    &.active label {
+        width: 20vw;
+
+        @media (max-width:768px) {
+            width: unset;
+            max-width: 90vw;
+        }
+    }
+
+    &.active + .header-mobile-nav-target {
+        display: none;
+    }
+
+    .form__notifications {
+        position: absolute;
+        top: calc(100% + .8rem);
+        width: calc(100vw - 3.2rem);
+        right: -.8rem;
+        padding: .8rem;
+        background-color: #fff;
+        z-index: 98;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: .8rem;
+
+        @media (min-width:769px) {
+            width: max-content;
+        }
+    }
+
+    .form__main {
+        column-gap: 0;
+    }
+
+    &.active .form__main {
+        column-gap: .8rem;
+    }
+    
+}
+
+.header.header--sticky form {
+    .form__notifications {
+        background-color: #fff;
+        border-radius: .8rem;
+        box-shadow: 0 8px 24px hsla(210, 8%, 62%, .2);
+        padding: .8rem;
+        position: absolute;
+        right: 0;
+        top: calc(100% + 1.6rem);
+        width: max-content;
+        z-index: 98;
     }
 }
