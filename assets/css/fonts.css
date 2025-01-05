@@ -2,27 +2,6 @@
 
 @font-face {
     font-family: "Aeonik Mono";
-    src: url('/assets/fonts/AeonikMono/AeonikMono-Air.otf');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Aeonik Mono";
-    src: url('/assets/fonts/AeonikMono/AeonikMono-Thin.otf');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Aeonik Mono";
-    src: url('/assets/fonts/AeonikMono/AeonikMono-Light.otf');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Aeonik Mono";
     src: url('/assets/fonts/AeonikMono/AeonikMono-Regular.otf');
     font-weight: 400;
     font-style: normal;
@@ -35,56 +14,9 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: "Aeonik Mono";
-    src: url('/assets/fonts/AeonikMono/AeonikMono-Bold.otf');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Aeonik Mono";
-    src: url('/assets/fonts/AeonikMono/AeonikMono-Black.otf');
-    font-weight: 900;
-    font-style: normal;
-}
 
 /* Editor's Note -------------------------------------------------------------- Editor's Note */ 
 
-@font-face {
-    font-family: "Editor's Note";
-    src: url('/assets/fonts/EditorsNote/Editor\'sNote-Thin.otf');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Editor's Note";
-    src: url('/assets/fonts/EditorsNote/Editor\'sNote-Extralight.otf');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Editor's Note";
-    src: url('/assets/fonts/EditorsNote/Editor\'sNote-Light.otf');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Editor's Note";
-    src: url('/assets/fonts/EditorsNote/Editor\'sNote-Regular.otf');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Editor's Note";
-    src: url('/assets/fonts/EditorsNote/Editor\'sNote-Medium.otf');
-    font-weight: 500;
-    font-style: normal;
-}
 
 @font-face {
     font-family: "Editor's Note";
@@ -93,62 +25,14 @@
     font-style: normal;
 }
 
+/* Inter -------------------------------------------------------------- Inter */ 
+
 @font-face {
-    font-family: "Editor's Note";
-    src: url('/assets/fonts/EditorsNote/Editor\'sNote-Bold.otf');
-    font-weight: 700;
+    font-family: "Inter";
+    src: url('/assets/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf');
     font-style: normal;
 }
 
-
-@font-face {
-    font-family: "Editor's Note";
-    src: url('/assets/fonts/EditorsNote/Editor\'sNote-ThinItalic.otf');
-    font-weight: 100;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "Editor's Note";
-    src: url('/assets/fonts/EditorsNote/Editor\'sNote-ExtralightItalic.otf');
-    font-weight: 200;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "Editor's Note";
-    src: url('/assets/fonts/EditorsNote/Editor\'sNote-LightItalic.otf');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "Editor's Note";
-    src: url('/assets/fonts/EditorsNote/Editor\'sNote-RegularItalic.otf');
-    font-weight: 400;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "Editor's Note";
-    src: url('/assets/fonts/EditorsNote/Editor\'sNote-MediumItalic.otf');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "Editor's Note";
-    src: url('/assets/fonts/EditorsNote/Editor\'sNote-SemiboldItalic.otf');
-    font-weight: 600;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "Editor's Note";
-    src: url('/assets/fonts/EditorsNote/Editor\'sNote-BoldItalic.otf');
-    font-weight: 700;
-    font-style: italic;
-}
 
 /* Inter Tight -------------------------------------------------------------- Inter Tight */ 
 
@@ -158,27 +42,7 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: "Inter Tight";
-    src: url('/assets/fonts/InterTight/InterTight-Italic-VariableFont_wght.ttf');
-    font-style: italic;
-}
-
 /* FK Roman Standard -------------------------------------------------------------- FK Roman Standard */ 
-
-@font-face {
-    font-family: "FK Roman Standard";
-    src: url('/assets/fonts/FKRomanStandard/FKRomanStandard-Thin.ttf');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "FK Roman Standard";
-    src: url('/assets/fonts/FKRomanStandard/FKRomanStandard-Light.ttf');
-    font-weight: 300;
-    font-style: normal;
-}
 
 @font-face {
     font-family: "FK Roman Standard";
@@ -189,64 +53,16 @@
 
 @font-face {
     font-family: "FK Roman Standard";
-    src: url('/assets/fonts/FKRomanStandard/FKRomanStandard-Medium.ttf');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "FK Roman Standard";
     src: url('/assets/fonts/FKRomanStandard/FKRomanStandard-Bold.ttf');
     font-weight: 700;
     font-style: normal;
 }
 
-@font-face {
-    font-family: "FK Roman Standard";
-    src: url('/assets/fonts/FKRomanStandard/FKRomanStandard-Black.ttf');
-    font-weight: 900;
-    font-style: normal;
-}
-
+/* FK Roman Display -------------------------------------------------------------- FK Roman Display */ 
 
 @font-face {
-    font-family: "FK Roman Standard";
-    src: url('/assets/fonts/FKRomanStandard/FKRomanStandard-ThinOblique.ttf');
-    font-weight: 100;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "FK Roman Standard";
-    src: url('/assets/fonts/FKRomanStandard/FKRomanStandard-LightOblique.ttf');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "FK Roman Standard";
-    src: url('/assets/fonts/FKRomanStandard/FKRomanStandard-RegularOblique.ttf');
+    font-family: "FK Roman Display";
+    src: url('/assets/fonts/FKRomanDisplay/FKRomanDisplay-Regular.ttf');
     font-weight: 400;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "FK Roman Standard";
-    src: url('/assets/fonts/FKRomanStandard/FKRomanStandard-MediumOblique.ttf');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "FK Roman Standard";
-    src: url('/assets/fonts/FKRomanStandard/FKRomanStandard-BoldOblique.ttf');
-    font-weight: 700;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "FK Roman Standard";
-    src: url('/assets/fonts/FKRomanStandard/FKRomanStandard-BlackOblique.ttf');
-    font-weight: 900;
-    font-style: italic;
+    font-style: normal;
 }
