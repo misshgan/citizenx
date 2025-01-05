@@ -62,7 +62,7 @@
         letter-spacing: -0.032px;
     }
 
-    &__column h5 {
+    &__column > span {
         font-family: "Inter Tight";
         font-size: 1.6rem;
         font-style: normal;
