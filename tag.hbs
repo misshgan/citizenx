@@ -2,8 +2,6 @@
 
 {{#tag}}
 
-{{> components/category-filter active=slug}}
-
 <section class="tag-page-hero">
     <div class="wrapper">
         <div class="tag-page-hero__text">
@@ -18,19 +16,23 @@
     </div>
 </section>
 
+{{> components/category-filter active=slug}}
+
 <div class="tag-page-loop">
-    {{> components/loop from='0' limit='all' filter="tag:{{slug}}"}}
+    {{> components/loop filter='tag:-hash-hide+tag:{{slug}}'}}
 </div>
 
+{{#get "posts" filter='tag:hash-{{slug}}'}}
+{{#if posts}}
 <div class="tag-page-content">
     <div class="wrapper">
-        {{#get "posts" filter='tag:hash-{{slug}}'}}
-            {{#foreach posts}}
-                {{> cards/minimal-card}}
-            {{/foreach}}
-        {{/get}}
+        {{#foreach posts}}
+            {{> cards/minimal-card}}
+        {{/foreach}}
     </div>
 </div>
+{{/if}}
+{{/get}}
 
 
 {{/tag}}
