@@ -1,17 +1,30 @@
 <div class="category-filter-container">
-    <div class="wrapper">
-        <ul class="category-filter">
-            <li {{#is 'home'}}class="active"{{/is}}>
-                <a href="/">{{> icons/categories/all}} <span>All</span></a>
+    <div class="wrapper swiper">
+        <div class="search" data-ghost-search>{{> icons/search}}<span>Search...</span></div>
+        <ul class="category-filter swiper-wrapper">
+            <li class="swiper-slide {{#is 'home'}}active{{/is}}" >
+                <a href="/"><span>{{> icons/categories/all}}</span> <span>All</span></a>
             </li>
-            <li {{#match active "=" 'citizenship-by-investment'}}class="active"{{/match}}>
-                <a href="/tag/citizenship-by-investment">{{> icons/categories/citizenship-by-investment}} <span>Citizenship by Investment</span></a>
+            <li class="swiper-slide {{#match active "=" 'citizenship-investment'}}active{{/match}}">
+                <a href="/citizenship-investment">{{> icons/categories/citizenship-by-investment}} <span>Citizenship by Investment</span></a>
             </li>
-            <li {{#match active "=" 'golden-visa'}}class="active"{{/match}}>
-                <a href="/tag/golden-visa">{{> icons/categories/golden-visa}} <span>Golden Visa</span></a>
+            <li class="swiper-slide {{#match active "=" 'golden-visa'}}active{{/match}}">
+                <a href="/golden-visa">{{> icons/categories/golden-visa}} <span>Golden Visa</span></a>
             </li>
-            <li {{#match active "=" 'crypto'}}class="active"{{/match}}>
-                <a href="/tag/crypto">{{> icons/categories/crypto}} <span>Crypto</span></a>
+            <li class="swiper-slide {{#match active "=" 'crypto'}}active{{/match}}">
+                <a href="/crypto">{{> icons/categories/crypto}} <span>Crypto</span></a>
+            </li>
+            <li class="swiper-slide {{#match active "=" 'citizenship-renunciation'}}active{{/match}}">
+                <a href="/citizenship-renunciation">{{> icons/categories/citizenship-renunciation}} <span>Citizenship Renunciation</span></a>
+            </li>
+            <li class="swiper-slide {{#match active "=" 'company'}}active{{/match}}">
+                <a href="/company">{{> icons/categories/company}} <span>Company</span></a>
+            </li>
+            <li class="swiper-slide {{#match active "=" 'news'}}active{{/match}}">
+                <a href="/news">{{> icons/categories/news}} <span>News</span></a>
+            </li>
+            <li class="swiper-slide {{#match active "=" 'case-study'}}active{{/match}}">
+                <a href="/case-study">{{> icons/categories/case-studies}} <span>Case Study</span></a>
             </li>
         </ul>
     </div>
