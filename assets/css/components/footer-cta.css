@@ -6,6 +6,11 @@
     background-position: center;
     background-size: cover;
 
+    @media (min-width:1921px) {
+        height: unset;
+        aspect-ratio: 2 / 1;
+    }
+
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -15,15 +20,6 @@
         position: relative;
         z-index: 5;
     }
-
-    /* &__bg {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 0;
-        top: 0;
-    } */
 
     &__title {
         font-family: "Inter Tight";
