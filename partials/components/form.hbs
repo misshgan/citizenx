@@ -1,13 +1,13 @@
-<form data-members-form class="form">
+<form class="form js-form {{classes}}">
     <div class="form__main">
         <label>
             <span>Email</span>
-            <input placeholder="Enter your email" data-members-email type="email" required>
+            <input placeholder="Enter your email" type="email" required>
         </label>
-        <button class="button button--accent">{{> icons/loader}} Receive updates</button>
+        <button class="button button--accent js-form-button">{{> icons/loader}} {{button}}</button>
     </div>
     <div class="form__notifications">
-        <p class="error" data-members-error></p>
-        <p class="success">Success! Check your inbox for our email.</p>
+        <p class="error">Failed to subscribe. Please try again.</p>
+        <p class="success">You have successfully subscribed!</p>
     </div>
 </form>
