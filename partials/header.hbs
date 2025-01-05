@@ -1,7 +1,11 @@
-<header class="header">
+<header class="header js-header">
     <div class="wrapper">
-        <a href="/" class="logo-link-container">
+        <a href="https://citizenx.com/" aria-label="go to homepage" class="logo-link-container">
             {{> icons/logo classes='logo logo--dark'}}
+            <div class="mobile-logo js-mobile-logo">
+                {{> icons/animation/logo}}
+                {{> icons/animation/symbol}}
+            </div>
         </a>
 
         <nav class="header-nav">
@@ -17,18 +21,26 @@
             <ul class="header-nav__login-buttons">
                 <li>
                     <a class="button button--white" href="https://home.citizenx.com/signin">
-                        {{> icons/login}}
-                        <span>Log In</span>
+                        <span>Sign in</span>
                     </a>
                 </li>
-                <li>
-                    <a class="button button--accent" href="https://home.citizenx.com/signin">
-                        {{> icons/symbol}}
-                        <span>Create account</span>
+                {{!-- <li>
+                    <a class="button button--accent" href="https://home.citizenx.com/signup">
+                        {{> icons/mail}}
+                        <span>Subscribe</span>
                     </a>
-                </li>
+                </li> --}}
             </ul>
         </nav>
 
+        {{> components/form classes='form--header' button='Subscribe'}}
+
+        <button aria-label="open mobile menu" class="header-mobile-nav-target js-header-mobile-nav-target">
+            {{> icons/menu}}
+            {{> icons/close}}
+        </button>
+
     </div>
+
+    {{> components/mobile-nav}}
 </header>
