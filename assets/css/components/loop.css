@@ -1,8 +1,9 @@
 .articles-loop {
     margin-top: 4rem;
+    position: relative;
 
     @media (min-width:1025px) {
-        margin-top: 8rem;
+        margin-top: 4.5rem;
     }
     
     .wrapper {
@@ -17,4 +18,31 @@
             row-gap: 4rem;
         }
     }
+
+    .load-more-button {
+        margin: 4rem auto 0;
+
+        svg path {
+            fill: #fff;
+            stroke: #fff;
+        }
+
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+    }
+
+    .wrapper.loading + .load-more-button {
+        color: transparent;
+    }
+
+    .wrapper.loading + .load-more-button svg {
+        display: block;
+    }
+
+    
 }
