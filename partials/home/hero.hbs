@@ -2,7 +2,7 @@
     <div class="wrapper">
         {{#get "posts" include='tags,authors' filter='tag:-hash-hide' limit='1'}}
             {{#foreach posts}}
-                {{> cards/card classes='card--big'}}
+                {{> cards/card classes='card--big' cardBig='true'}}
             {{/foreach}}
         {{/get}}
 
