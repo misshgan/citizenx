@@ -1,35 +1,43 @@
-<div class="header header--sticky js-sticky-header">
+<div class="header header--sticky js-sticky-header js-header">
     <div class="wrapper">
-        <a href="/" class="logo-link-container mobile">
+        <a href="https://citizenx.com/insights" aria-label="go to homepage" class="logo-link-container">
             {{> icons/logo classes='logo logo--dark'}}
+            <div class="mobile-logo js-mobile-logo">
+                {{> icons/animation/logo}}
+                {{> icons/animation/symbol}}
+            </div>
         </a>
 
-        <a href="/" class="logo-link-container desktop">
-            {{> icons/symbol classes='symbol symbol--dark'}}
-        </a>
+        <nav class="header-nav">
+            <ul class="header-nav__main">
+                <li>
+                    <a href="https://citizenx.com/how-it-works">Why us</a>
+                </li>
+                <li>
+                    <a href="https://citizenx.com/pricing">Pricing</a>
+                </li>
+            </ul>
 
-        <h2 class="header__title desktop">{{title}}</h2>
-
-        <nav class="header-nav mobile">
             <ul class="header-nav__login-buttons">
                 <li>
                     <a class="button button--white" href="https://home.citizenx.com/signin">
-                        {{> icons/login}}
-                    </a>
-                </li>
-                <li>
-                    <a class="button button--accent" href="https://home.citizenx.com/signin">
-                        {{> icons/symbol}}
-                        <span>Create account</span>
+                        <span>Sign in</span>
                     </a>
                 </li>
             </ul>
         </nav>
 
-        {{> icons/up classes='js-scroll-to-top desktop'}}
+        {{> components/form classes='form--header' button='Subscribe'}}
+
+        <button aria-label="open mobile menu" class="header-mobile-nav-target js-header-mobile-nav-target">
+            {{> icons/menu}}
+            {{> icons/close}}
+        </button>
 
     </div>
     <div class="progress-bar-container js-progress-bar-container">
         <div class="progress-bar js-progress-bar"></div>
     </div>
+
+    {{> components/mobile-nav}}
 </div>
