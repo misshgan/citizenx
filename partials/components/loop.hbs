@@ -1,9 +1,9 @@
-{{#get "posts" filter=filter include='authors,tags' limit=limit}}
-    <div class="articles-loop">
-        <div class="wrapper">
-            {{#foreach posts from=../from}}
+<div class="articles-loop">
+    <div class="wrapper">   
+        {{#get "posts" limit='all' include='tags,authors' filter=filter}}
+            {{#foreach posts}}
                 {{> cards/card classes='card--default'}}
             {{/foreach}}
-        </div>
+        {{/get}}
     </div>
-{{/get}}
+</div>
